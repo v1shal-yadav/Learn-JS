@@ -4,7 +4,7 @@
 
 let name = "vishal"
 let age = 22
-let isLoggedIn = true; 
+let isLoggedIn = true;   
 
 //      *** primitve datatypes *** 
 // number => 2 to the power 53
@@ -15,10 +15,11 @@ let isLoggedIn = true;
 // undefined => value is not assigned. 
 // symbol => unique 
 
-// object 
+// *** object ***
 
 console.log(typeof null) // => object
 console.log(typeof undefined) // => undefined
+ 
 
 
 
