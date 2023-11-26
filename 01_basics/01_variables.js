@@ -21,5 +21,8 @@ You may or may not use semi-colon in javascript.
 Javascript engine is hidden inside browser.
 code readability should be high.
 Documentation -> tc39(official by ECMA) and mdn (by mozilla)
+To master javascript, objects and web events. 
+
+
 
 */
