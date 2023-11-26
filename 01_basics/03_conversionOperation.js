@@ -23,6 +23,64 @@ undefined => NaN
 
 //                 *** operations *** 
 
+let value = 3
+let negValue = -value
+
+console.log(negValue) 
+
+console.log(2+2)
+console.log(2-2)
+console.log(2*2)
+console.log(2**2) // power
+console.log(2/2)
+console.log(2%2)
+
+let str = "hello"
+let str2 = "vishal"
+
+let str3 = str + str2
+
+console.log(1 + 2) // => 3
+console.log(1 + "2") // => 12
+console.log("1" + 2) // => 12
+console.log("1" + 2 + 2) // 122
+console.log(1 + 2 + "2") // => 32
+
+console.log(+true) // => 1
+console.log(+"") // => 0
+
+/*  
+
+In JavaScript, when you use the less-than operator (<) to compare values, JavaScript performs a type coercion, 
+which means it tries to convert the operands to the same type before making the comparison.
+
+*/
+console.log("2" < 1) // => false 
+console.log("02" < 1) // => false 
+
+console.log(null > 0) // => false 
+console.log(null == 0) // => false 
+console.log(null >= 0) // => true
+
+// If "undefined" is used in case of null, then all the three will give false as an output. 
+
+/*
+The reason is that an equality check == and comparisons > < >= <= work differently. 
+Comparisons convert null to a number, treating it as 0. 
+That's why (3) null >= 0 is true and (1) null > 0 is false.  */
+
+// strict check ( === ) 
+
+console.log("2" === 2) 
+
+
+
+
+
+
+
+
+
 
 
 
