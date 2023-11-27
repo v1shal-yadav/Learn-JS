@@ -44,5 +44,27 @@ const myFunction = function() {
     console.log("hello vishal")
 }
 
+//          ++++++++++
+
+// stack(primitve) & heap(non-primitive) 
+
+let myEmail = "vishal@gmail.com"
+let newEmail = myEmail 
+newEmail = "vishal@outlook.com"
+
+console.log(myEmail)
+console.log(newEmail)
+
+let userOne = {
+    email: "vishal@google.com"
+}
+let userTwo = userOne 
+userTwo.email = "vishal@apple.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
+
+
+
 
 
