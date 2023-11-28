@@ -1,7 +1,7 @@
 /* 
         *** primitive *** 
 
-call by value and changes happens to copy.
+call by value, changes happens to copy.
 
 7 types: null, number, string, symbol, Boolean, undefined, BigInt
 
@@ -40,6 +40,7 @@ let myInfo = {
     age: 22
     // whatever is iniside this {}curlybraces is an oject, it can be of any datatype and it can be another object also.
 }
+
 const myFunction = function() {
     console.log("hello vishal")
 }

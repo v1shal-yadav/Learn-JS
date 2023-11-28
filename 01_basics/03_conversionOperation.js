@@ -1,8 +1,8 @@
 let score = "45"
-console.log(typeof score)
+console.log(typeof score) // => string
 
-let valueInNumber = Number (score) // => Number starts with capital letter. 
-console.log(typeof valueInNumber)
+let valueInNumber = Number (score) // => Number starts with capital letter here. 
+console.log(typeof valueInNumber) // => number
 
 let score1 = "45abc" 
 let score1InNumber = Number (score1)
@@ -10,7 +10,7 @@ let score1InNumber = Number (score1)
 console.log(typeof score1InNumber) // => output: number
 console.log(score1InNumber) // => output: NaN 
 
-/* conversion
+/* conversion 
 "33" => 33
 "33abc" => NaN
 true => 1, false => 0
@@ -48,6 +48,8 @@ console.log(1 + 2 + "2") // => 32
 
 console.log(+true) // => 1
 console.log(+"") // => 0
+// The unary plus operator (+) in JavaScript is designed to convert its operand to a number. 
+// It's clearer to use Number() or parseInt() for better readability and to avoid any confusion.
 
 /*  
 
@@ -62,7 +64,7 @@ console.log(null > 0) // => false
 console.log(null == 0) // => false 
 console.log(null >= 0) // => true
 
-// If "undefined" is used in case of null, then all the three will give false as an output. 
+// If "undefined" is used in case of null, then all three will give false as an output. 
 
 /*
 The reason is that an equality check == and comparisons > < >= <= work differently. 
@@ -71,7 +73,7 @@ That's why (3) null >= 0 is true and (1) null > 0 is false.  */
 
 // strict check ( === ) 
 
-console.log("2" === 2) 
+console.log("2" === 2) // => false 
 
 
 

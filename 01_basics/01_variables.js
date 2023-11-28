@@ -2,7 +2,7 @@ const accountId = 1243
 let accountEmail = "vishal@gmail.com"
 var accountPassword = "weer@#23"
 accountCity = "varanasi" // this is not a standard practise
-let accountState 
+let accountState // => console.log(accountState) => undefined
 
 // accountId = 2 // this is not allowed 
 
@@ -21,8 +21,5 @@ You may or may not use semi-colon in javascript.
 Javascript engine is hidden inside browser.
 code readability should be high.
 Documentation -> tc39(official by ECMA) and mdn (by mozilla)
-To master javascript, objects and web events. 
-
-
-
+To master javascript, master objects and web events. 
 */
