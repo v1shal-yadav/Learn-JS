@@ -43,5 +43,10 @@ const url = "https://vishal.com/vishal%20yadav"
 console.log(url.replace('%20', '-')); // => https://vishal.com/vishal-yadav
 
 console.log(url.includes('vishal')); // => true
+console.log(url.split('i')); // => [ 'https://v', 'shal.com/v', 'shal%20yadav' ]
+
+/*
+strings need to be practised and use backticks.
+*/
 
 
