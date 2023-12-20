@@ -11,7 +11,7 @@ accountPassword = "r234f2@@@"
 accountCity = "Delhi"
 
 console.log("accountPassword")
-console.table([accountEmail, accountId, accountPassword, accountCity, accountState])
+console.table([accountEmail, accountId, accountPassword, accountCity, accountState]) 
 
 /*
 let and const are used now a days.
