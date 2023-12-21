@@ -1,4 +1,4 @@
-"use strict"; // treat all JS code as newer version and modern versions may not require writing this.a
+"use strict"; // treat all JS code as newer version and modern versions may not require writing this
 
 // alert(3 + 3) // this will throw error as we are using node.js, not browser. 
 
