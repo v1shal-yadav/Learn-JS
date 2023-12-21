@@ -31,7 +31,7 @@ console.log(anotherString);
 /*
 const gameName = "hitesh_hc"
 gameName.slice(-8,4) => ite
-The start parameter is -8, which means it starts from the 3rd position from the end of the string.
+The start parameter is -8, which means it starts from the end of the string.
 The end parameter is 4, which means it goes up to, but does not include, the character at index 4.
  */
 
