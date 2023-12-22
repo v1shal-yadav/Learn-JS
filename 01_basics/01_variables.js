@@ -5,7 +5,7 @@ accountCity = "varanasi" // this is not a standard practise
 let accountState // => console.log(accountState) => undefined
 
 // accountId = 2 // this is not allowed 
-
+   
 accountEmail = "yadav@gmail.com"
 accountPassword = "r234f2@@@"
 accountCity = "Delhi"
