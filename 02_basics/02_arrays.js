@@ -8,7 +8,7 @@ const dc_heroes = ["superman", "flash", "batman"]
 // console.log(allHeroes);
 
 const allNewHeroes = [...marvel_heroes, ...dc_heroes]
-console.log(allNewHeroes);
+console.log(allNewHeroes); 
 
 const another_array = [1,2,3,[4,5,6],[1,[2,3]]]
 const real_another_array = another_array.flat(Infinity)
