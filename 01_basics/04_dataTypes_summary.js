@@ -10,7 +10,7 @@ they hold at runtime and can change throughout the program as we assign differen
 */
 
 const score = 100
-const scoreValue = 100.3
+const scoreValue = 100.3 
 
 const isLoggedIn = true
 const outsideTemp = null
