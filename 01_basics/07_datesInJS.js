@@ -18,7 +18,7 @@ console.log(myCreatedDate.getTime());    // => 1701168105495
 console.log(Math.floor(Date.now()/1000));// => 1701168105
 console.log(myDate.getMonth() + 1); // 1 is added for clarity to user.
 
-myDate.toLocaleString('Default', {
+myDate.toLocaleString('Default', { 
     weekday:"long"
     weekday:
 })
