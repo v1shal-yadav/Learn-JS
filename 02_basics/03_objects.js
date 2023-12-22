@@ -23,7 +23,7 @@ console.log(JsUser.email); // => vishal@google.com
 // Object.freeze(JsUser)
 JsUser.email = "vishal@chatGPT.com"
 console.log(JsUser.email); // => vishal@google.com
-
+ 
 console.log(JsUser);
 /* 
 {
