@@ -5,7 +5,7 @@
 let name = "vishal"
 let age = 22
 let isLoggedIn = true;   
-
+  
 //      *** primitve datatypes *** 
 // number => 2 to the power 53
 // bigInt 
