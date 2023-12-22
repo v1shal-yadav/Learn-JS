@@ -9,7 +9,7 @@ console.log(balance);
 console.log(balance.toString().length); // => 3
 console.log(balance.toFixed(3)); // => 200.000
 
-const otherNumber = 4846.5342
+const otherNumber = 4846.5342 
 console.log(otherNumber.toPrecision(3));
 // priority is given before decimal.
 
