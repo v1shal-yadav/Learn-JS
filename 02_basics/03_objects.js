@@ -12,6 +12,7 @@ const JsUser = {
     lastLogInDays: ["monday", "tuesday"],
     [mySym]: "myKey1"  // => syntax for using symbol in objects
 };
+
 console.log(JsUser.email) // => vishal@email.com
 console.log(JsUser["email"]) // => vishal@email.com
 console.log(JsUser["full name"]) // => vishal yadav
@@ -42,10 +43,6 @@ JsUser.greetings = function() {
 }
 console.log(JsUser.greetings); // => [Function (anonymous)]
 console.log(JsUser.greetings()); // => [Function (anonymous)]
-
-
-
-
 
 /*
 objects can be declared by two types 
