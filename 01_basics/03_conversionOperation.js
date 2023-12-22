@@ -7,7 +7,7 @@ console.log(typeof valueInNumber) // => number
 let score1 = "45abc" 
 let score1InNumber = Number (score1)
 
-console.log(typeof score1InNumber) // => output: number
+console.log(typeof score1InNumber) // => output: number 
 console.log(score1InNumber) // => output: NaN 
 
 /* conversion 
