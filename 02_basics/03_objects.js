@@ -11,7 +11,7 @@ const JsUser = {
     isLoggedIn: false,
     lastLogInDays: ["monday", "tuesday"],
     [mySym]: "myKey1"  // => syntax for using symbol in objects
-};
+};    
 
 console.log(JsUser.email) // => vishal@email.com
 console.log(JsUser["email"]) // => vishal@email.com
@@ -41,12 +41,19 @@ console.log(JsUser);
 JsUser.greetings = function() {
     console.log("Hello, JS user");
 }
+
 console.log(JsUser.greetings); // => [Function (anonymous)]
 console.log(JsUser.greetings()); // => [Function (anonymous)]
 
-/*
+JsUser.greetingsTwo = function() {
+  console.log(`Hello, JS user ${this.name} `);
+}
+console.log(JsUser.greetingsTwo());
+/*    
 objects can be declared by two types 
 
-literal(no singleton formed) and constructors(singleton formed)
+literals(no singleton formed) and constructors(singleton formed)
 objects.create => this is constructor method
+Mostly values are accessed using dots, but there are some cases we have to use [] we don't have another option.
 */
+
