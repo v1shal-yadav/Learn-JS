@@ -77,7 +77,6 @@ const { courseInstructorName: instructor} = course
 //     "price": "free"
 // }
 
-// this is the end 
 
 
 
