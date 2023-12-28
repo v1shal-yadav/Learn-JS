@@ -35,6 +35,7 @@ if(true) {
 }
 // console.log(username); // error
 
+// +++++++ interesting ++++++
 addone(5) // no error (hoisting) 
 function addone(num) {
     return num + 1
