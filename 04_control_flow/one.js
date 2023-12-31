@@ -7,6 +7,8 @@ const isUserLoggedIn = true
 
 // <, >, <=, >=, ==, !=, ===, !==
 
+if(true) console.log("a"), console.log("b") // => will work but goof practise
+
 // if(true) {
 //     console.log(1);
 // } else if(true) {
