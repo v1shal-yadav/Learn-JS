@@ -8,26 +8,26 @@ const user = {
     }
 }
 
-// user.welcomeMessage()
-// user.username = "Sam"
-// user.welcomeMessage()
+user.welcomeMessage()
+user.username = "Sam"
+user.welcomeMessage()
 
-// console.log(this); // => {} (empty object)
+console.log(this); // => {} (empty object)
 // In node environment {} is golbal object and in browswer window is global object.
 // The window object represents the global context for the JavaScript code running in a browser.
 
-// function chai() {
-//     let username = "vishal"
-//     console.log(this); // will get so many valuesk
-//     console.log(this.username) // => undefined
-// }
-// chai()
-// const chai = function () {
-//     let username = "vishal"
-//     console.log(this); // will get so many valuesk
-//     console.log(this.username) // => undefined
-// }
-// chai()
+function chai() {
+    let username = "vishal"
+    console.log(this); // will get so many valuesk
+    console.log(this.username) // => undefined
+}
+chai()
+const chai = function () {
+    let username = "vishal"
+    console.log(this); // will get so many valuesk
+    console.log(this.username) // => undefined
+}
+chai()
 
 const chai =  () =>  {
     let username = "vishal"
