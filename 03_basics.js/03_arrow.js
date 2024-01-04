@@ -34,16 +34,16 @@ const chai =  () =>  {
     console.log(this); // => {}
     console.log(this.username) // => undefined
 }
-// chai()
+chai()
 
 // () => {} // basic syntax
 
-// const addTwo = (num1, num2) => {
-//     return num1 + num2
-// }
+const addTwo = (num1, num2) => {
+    return num1 + num2
+}
 // curly braces return needed i.e. explicit return
-// const addTwo = (num1, num2) => num1 + num2 // implicit return 
-// const addTwo = (num1, num2) => {username: "vishal"} // undefined
+const addTwo = (num1, num2) => num1 + num2 // implicit return 
+const addTwo = (num1, num2) => {username: "vishal"} // undefined
 const addTwo = (num1, num2) => ({username: "vishal"}) //{ username: 'vishal' }
 
 console.log(addTwo(4,5)); 
