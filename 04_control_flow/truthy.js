@@ -6,14 +6,14 @@
 // ex- "0", 'false', " ", [], {}, function(){}
 
 // to check [] i.e., 
-// if(userEmail.length.length === 0) {
-//     console.log("Array is empty");
-// }
-// const emptyObj = {}
-// first make array of objects keys and then use lenght property.
-// if(Object.keys(emptyObj).length === 0) {
-//     console.log("Object is empty");
-// }
+if(userEmail.length.length === 0) {
+    console.log("Array is empty");
+}
+const emptyObj = {}
+// first make array of objects keys and then use length property.
+if(Object.keys(emptyObj).length === 0) {
+    console.log("Object is empty");
+}
 // print this in browser console.
 // false == 0 // => true
 // false = '' // => true
@@ -22,14 +22,14 @@
 // Nullish Coalescing Operator (??): null undefined
 
 let val1; 
-// val1 = 5 ?? 10 // => 5
-// val1 = null ?? 10 // => 10
-// val1 = undefined ?? 15 // => 15
-// val1 = null ?? 10 ?? 20 // => 10
+val1 = 5 ?? 10 // => 5
+val1 = null ?? 10 // => 10
+val1 = undefined ?? 15 // => 15
+val1 = null ?? 10 ?? 20 // => 10
 
-// console.log(val1)
+console.log(val1)
 
-// Ternary Operator 
+// *** Ternary Operator *** 
 
 // condition ? true: false
 
