@@ -3,7 +3,8 @@
 // named IIFE
 (function chai() { 
     console.log(`DB CONNECTED`);
-})(); // again using the IIFE function after chai() sometimes not work because you might have missed the semi-colon(;). chai() has to be revoked after its execution.
+})(); // again using the IIFE function after chai() sometimes not work because you might have missed the semi-colon(;). 
+// chai() has to be revoked after its execution.
 // while writing two IIFE in a same file, remember to use(;)
 
 // ( () => { console.log(`vishal`);} )() // will also work
