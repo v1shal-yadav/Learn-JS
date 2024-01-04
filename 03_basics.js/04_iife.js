@@ -16,5 +16,5 @@
 // unnamed IIFE
 ( (name) => {
     console.log(`DB CONNECTED TO ${name}`);
-})('vishal yadav')
+})('vishal yadav') 
 
