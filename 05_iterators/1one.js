@@ -9,21 +9,29 @@ for (let index = 0; index < myArray.length; index++) {
     const element = myArray[index];
     console.log(element);
 }
+/* 
+    *** break and continue ***
+The break statement "jumps out" of a loop.
+The continue statement "jumps over" one iteration in the loop.
+*/
 
-// break and continue
+// *** while ***
 
-// for (let index = 1; index <= 20; index++) {
-//     if(index == 5){
-//     console.log(`Detected 5`);
-//     break
-//     }
-//     console.log(`value of i is ${index}`)
-// }
-// for (let index = 1; index <= 20; index++) {
-//     if(index == 5){
-//     console.log(`Detected 5`);
-//     continue
-//     }
-//     console.log(`value of i is ${index}`)
-// }
+let index = 0
+while (index <= 10) {
+    console.log(`Value of index is ${index}`)
+    index = index + 2
+}
+
+// do-while loop (used rarely) 
+
+let score = 1
+
+do{
+    console.log(`score is ${score}`)
+    score++
+}
+while(score <= 10)
+
+// 
 
