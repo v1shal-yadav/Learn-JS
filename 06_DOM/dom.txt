@@ -1,0 +1,30 @@
+In javascript events run sequencially ( some exceptions)
+
+type, timestamp, defaultPrevented
+target toElement, srcElement, currentarget, 
+clientX, clientY, screenX, screenY
+altkey, ctrlkey, shiftkey, keycode
+
+*Event Propagation has two context 
+event capturing(true) top to bottom
+ and 
+event bubbling(false) bottom to top 
+
+event.stopPropagation()
+event.preventDefault()
+
+javascript 
+    synchronous
+    single threaded
+
+Execution context
+    execute one line of code a time
+    console.log -1 
+    console.log -2 
+
+each operation waits for the last one to complete before executing 
+
+Blocking code   v/s     Non Blocking code
+block the flow          does not block execution
+of the program
+
