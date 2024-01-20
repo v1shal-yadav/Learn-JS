@@ -3,14 +3,14 @@
 // .then() is related to resolve, we get a call back in .then(), it automatically receives an argument
 
 const promiseOne = new Promise(function(resolve, reject) {
-    //  Do an async task
+    // Do an async task
     // DB calls, cryptography, network
     setTimeout( function() {
         console.log('Async task is complete');
         resolve()
     }, 1000)
 })
-// resolve() is used to connect the upper and lower part
+// resolve() is used to connect the upper and lower part 
 // first the upper portion will run and then lower portion
 promiseOne.then(function() {
     console.log('Promise completed');
@@ -34,7 +34,7 @@ const promiseThree = new Promise(function(resolve, reject) {
 promiseThree.then(function(user) {
     console.log(user); // => {username: "chai", email: "chai@example.com"}
 })
-// whatever parameter we will pass in resolve will be available here (like user) 
+// whatever parameter will be passed in resolve will be available here (like user) 
 
 const promiseFour = new Promise(function(resolve, reject) {
     setTimeout(function(){
@@ -55,7 +55,7 @@ promiseFour.then((user) => {
     console.log(username);
 }).catch(function(error){
     console.log(error);
-}).finally(() => console.log("The promise is either resolvedk or rejected"))
+}).finally(() => console.log("The promise is either resolved or rejected"))
 
 const promiseFive = new Promise(function(resolve, reject){
     setTimeout(function(){
@@ -68,7 +68,9 @@ const promiseFive = new Promise(function(resolve, reject){
         }
     }, 1000)
 });
-// async/await exactly same as .then() and .catch()  waits for sometime and move forward otherwise provides error, it don't handle catch gracefully
+// async/await works exactly same as .then() and .catch(), waits for sometime and move forward otherwise provides error, it don't handle catch gracefully
+// Asynchronous operations are common in JavaScript, such as fetching data from a server, reading a file, or waiting for a timeout.
+// Inside an async function, you can use the await keyword to pause the execution of the function until the Promise is resolved. It can only be used inside an async function:
 async function consumePromiseFive(){
     try{
         const response = await promiseFive
@@ -99,3 +101,4 @@ fetch('https://jsonplaceholder.typicode.com/users')
 }).then((data) => {
     console.log(data);
 }).catch((error) => console.log(error))
+
