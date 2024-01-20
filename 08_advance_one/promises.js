@@ -1,25 +1,29 @@
 // The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+// with new keyword you will get new instance 
+// .then() is related to resolve, we get a call back in .then(), it automatically receives an argument
 
 const promiseOne = new Promise(function(resolve, reject) {
-    //Do an async task
+    //  Do an async task
     // DB calls, cryptography, network
     setTimeout( function() {
         console.log('Async task is complete');
         resolve()
     }, 1000)
 })
-
+// resolve() is used to connect the upper and lower part
+// first the upper portion will run and then lower portion
 promiseOne.then(function() {
     console.log('Promise completed');
 })
 
+// another syntax to use promise and .then()
 new Promise(function(resolve, reject) {
     setTimeout(function() {
         console.log("Async task 2");
         resolve()
     }, 1000)
 }).then(function() {
-    console.log("Asynce 2 resolved");
+    console.log("Async 2 resolved");
 })
 
 const promiseThree = new Promise(function(resolve, reject) {
@@ -28,8 +32,9 @@ const promiseThree = new Promise(function(resolve, reject) {
     }, 1000)
 })
 promiseThree.then(function(user) {
-    console.log(user);
+    console.log(user); // => {username: "chai", email: "chai@example.com"}
 })
+// whatever parameter we will pass in resolve will be available here (like user) 
 
 const promiseFour = new Promise(function(resolve, reject) {
     setTimeout(function(){
@@ -42,7 +47,7 @@ const promiseFour = new Promise(function(resolve, reject) {
         }
     }, 1000)
 })
-
+// how to avoid callback hell
 promiseFour.then((user) => {
     console.log(user);
     return user.username
@@ -50,7 +55,7 @@ promiseFour.then((user) => {
     console.log(username);
 }).catch(function(error){
     console.log(error);
-}).finally(() => console.log("The promise is either resolve or rejected"))
+}).finally(() => console.log("The promise is either resolvedk or rejected"))
 
 const promiseFive = new Promise(function(resolve, reject){
     setTimeout(function(){
@@ -63,7 +68,7 @@ const promiseFive = new Promise(function(resolve, reject){
         }
     }, 1000)
 });
-
+// async/await exactly same as .then() and .catch()  waits for sometime and move forward otherwise provides error, it don't handle catch gracefully
 async function consumePromiseFive(){
     try{
         const response = await promiseFive
@@ -86,7 +91,7 @@ async function getAllUsers() {
     }
 }
 getAllUsers()
-// OR 
+// OR above code written as .then() .catch()
 
 fetch('https://jsonplaceholder.typicode.com/users')
 .then((response) => {
