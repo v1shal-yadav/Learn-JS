@@ -37,23 +37,13 @@ The constructor is called: The constructor function is called with the specified
 The new object is returned: After the constructor function has been called, if it doesn't return a non-primitive value (object, array, function, etc.), the newly created object is returned.
 
 */
+
 /*
-JavaScript Prototypal Behavior:
-
-Objects inherit from prototypes, forming a chain of inheritance.
-new Keyword:
-
-Creates instances, establishing a link between the object and its prototype.
-Classes:
-
-Syntactic sugar for prototypal inheritance, offering a structured way to create objects.
-this Keyword:
-
-Refers to the current object, its behavior dependent on the execution context.
-Prototypal Inheritance:
-
-Objects look up the prototype chain for properties/methods not found in themselves.
-Inheritance Hierarchy:
-
-If not found, JavaScript searches up the prototype chain until the end (null).
+JavaScript default behaviour is Prototypal:
+new keyword 
+classes
+this keyword 
+prototypal inheritance all are because of javascript behaviour.
+If javascript does not get anything it went to parents then gradparents till null.
+Javascript gives constructor function through new keyword.
 */

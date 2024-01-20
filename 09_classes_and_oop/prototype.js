@@ -22,9 +22,9 @@ Array.prototype.heyVishal = function() {
 heroPower.vishal()
 myHeros.vishal()
 myHeros.heyVishal()
-heroPower.vishal()
+// heroPower.heyVishal()
 
-// ***Inheritance 
+// ***Inheritance (prototypal inheritance)
 
 const user = {
     name: "chai", 
@@ -53,7 +53,8 @@ let anotherUserName = "chaiAurcode         "
 
 String.prototype.trueLength = function() {
     console.log(`${this}`);
-    console.log(`${this.name}`);
     console.log(`True length is: ${this.trim().length}`);
 }
 anotherUserName.trueLength()
+"vishal".trueLength()
+"iceTea".trueLength()
