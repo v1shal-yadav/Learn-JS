@@ -1,59 +1,94 @@
-// *** objects *** 
+// const tinderUser = new Object() // => singleton object
+const tinderUser = {} // => non-singleton
 
-const mySym = Symbol("key1")
+// console.log(tinderUser); // => {} in both the above two cases
 
-const JsUser = {
-    name: "vishal", // => name is treated as a string "name"
-    "full name": "vishal yadav",
-    age: 22,
-    location: "varanasi", 
-    email: "vishal@email.com",
-    isLoggedIn: false,
-    lastLogInDays: ["monday", "tuesday"],
-    [mySym]: "myKey1"  // => syntax for using symbol in objects
-};    
+tinderUser.id = "123abc"
+tinderUser.name = "sammy"
+tinderUser.isLoggedIn = false
 
-console.log(JsUser.email) // => vishal@email.com
-console.log(JsUser["email"]) // => vishal@email.com
-console.log(JsUser["full name"]) // => vishal yadav
-console.log(JsUser[mySym]) // => myKey1
-
-JsUser.email = "vishal@google.com"
-console.log(JsUser.email); // => vishal@google.com
-// Object.freeze(JsUser)
-JsUser.email = "vishal@chatGPT.com"
-console.log(JsUser.email); // => vishal@google.com
- 
-console.log(JsUser);
-/* 
-{
-  name: 'vishal',
-  'full name': 'vishal yadav',
-  age: 22,
-  location: 'varanasi',
-  email: 'vishal@google.com',
-  isLoggedIn: false,
-  lastLogInDays: [ 'monday', 'tuesday' ],
-  [Symbol(key1)]: 'myKey1'
+const regularUser = {
+    email: "vishal@gmail.com",
+    fullname: {
+        userFullName: {
+            fistname: "vishal",
+            lastName: "yadav",
+        }
+    }              
 }
+// console.log(regularUser.fullname);
+
+const obj1 = {1: 'a', 2: 'b'}
+const obj2 = {2: 'a', 3: 'b'}
+
+const obj3 = {obj1, obj2}
+console.log(obj3); // => { obj1: { '1': 'a', '2': 'b' }, obj2: { '2': 'a', '3': 'b' } }
+// obj1, obj2 both remains unchanged.
+
+
+const obj4 = Object.assign(obj1, obj2) 
+console.log(obj4); // => { '1': 'a', '2': 'a', '3': 'b' }
+// obj1 will change but not obj2 
+
+/*
+Object.assign modifies the target object (obj1 in this case) by merging properties from the source objects (obj2). When there's a conflict (e.g., both objects have a property with the same key), the value from the last object in the argument list (obj2 in this case) overwrites the existing value.
 */
 
-JsUser.greetings = function() {
-    console.log("Hello, JS user");
+const obj5 = Object.assign({}, obj1, obj2)//=> Object.assign(target, source),this can be seen in production grade codes.
+console.log(obj5); // => // => { '1': 'a', '2': 'a', '3': 'b' }
+// obj1, obj2 both remains unchanged.
+
+
+// console.log( obj4 === obj5); // = false
+// console.log( obj1 === obj4) // => true
+
+const obj6 = {...obj1, ...obj2}
+console.log(obj6); // => { '1': 'a', '2': 'a', '3': 'b' }
+// obj1, obj2 both remains unchanged.
+  
+const users = [
+    {
+        email: "1@gmail.com"
+    },
+    {
+        email: "1@gmail.com"
+    },
+    {
+        email: "1@gmail.com"
+    },
+    {
+        email: "1@gmail.com"
+    },
+]
+
+// console.log(Object.keys(tinderUser)); // => [ 'id', 'name', 'isLoggedIn' ], output datatype is array
+// console.log(Object.values(tinderUser)) // => [ '123abc', 'sammy', false ], output datatype is array
+// console.log(Object.entries(tinderUser)) // => [ [ 'id', '123abc' ], [ 'name', 'sammy' ], [ 'isLoggedIn', false ] ], output datatype is array
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn')); // => true
+
+const course = {
+    coursename: "javascript",
+    price: "999",
+    courseInstructorName: "hitesh"      
 }
+console.log(course.courseInstructorName);
 
-console.log(JsUser.greetings); // => [Function (anonymous)]
-console.log(JsUser.greetings()); // => [Function (anonymous)]
+// *** object destructurng **** 
+// array is also destructured, but it is very rare.
 
-JsUser.greetingsTwo = function() {
-  console.log(`Hello, JS user ${this.name} `);
-}
-console.log(JsUser.greetingsTwo());
-/*    
-objects can be declared by two types 
+const { courseInstructorName: instructor} = course
+console.log(instructor);
 
-literals(no singleton formed) and constructors(singleton formed)
-objects.create => this is constructor method
-Mostly values are accessed using dots, but there are some cases we have to use [] we don't have another option.
-*/
+// the below written code is almost like json.
+// {
+//     "name": "hitesh"
+//     "coursename": "Js in hindi"
+//     "price": "free"
+// }
+
+
+
+
+
 
