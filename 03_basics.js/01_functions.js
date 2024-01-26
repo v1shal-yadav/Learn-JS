@@ -17,8 +17,8 @@ function addTwoNUmbers1(number1, number2) {
 
 function addTwoNUmbers(number1, number2) {
     // result = number1 + number2;
-    // return result
-    return number1 + number2
+    return result 
+    // or return number1 + number2
     console.log("Vishal"); // "vishal" will never be printed
 }
 
@@ -29,21 +29,22 @@ const result = addTwoNUmbers(4,1)
 function loginUserMessge(username) {
     return `${username} just logged in`
 }
-// console.log(loginUserMessge("Vishal")); // => Vishal just logged in
-// console.log(loginUserMessge()); // => undefined just logged in
+console.log(loginUserMessge("Vishal")); // => Vishal just logged in
+console.log(loginUserMessge()); // => undefined just logged in
 
 function loginUserMessge(username = "Sam") {
-    if(!undefined) {
-        `Please enter a value`
-        return
+    if(!undefined){ // (username === undefined) 
+        return `Please enter a value`
+        // undefined is a falsy value and in any case if will be executed.
     }
     return `${username} just logged in`
 }
 
-function calculateCartPrice(...num1) { // => rest operator
+// rest operator
+function calculateCartPrice(...num1) { 
     return num1
 }
-// console.log(calculateCartPrice(200, 400, 600, 800));
+console.log(calculateCartPrice(200, 400, 600, 800)); // => [ 200, 400, 600, 800 ]
 
 const user = {
     username: "vishal",
@@ -52,9 +53,10 @@ const user = {
 function handleObject(anyobject) {
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
+
 // handleObject(user) 
 // handleObject({
-//     username: "yadav ji", 
+//     username: "vishal ji", 
 //     price: "299"
 // })
 
@@ -64,4 +66,4 @@ function returnSecondValue(getArray) {
     console.log(getArray[1]);
 }
 returnSecondValue(myNewArray)
-returnSecondValue([200, 300, 400, 500])
+returnSecondValue([200, 300, 400, 500]) 
