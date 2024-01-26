@@ -26,5 +26,5 @@ To master javascript, master objects and web events.
  The var keyword was used in all JavaScript code from 1995 to 2015. The let and const keywords were added to JavaScript in 2015. 
  The var keyword should only be used in code written for older browsers.
  variable can be redeclared with var but not with let 
- var can be accessed using window and let is deleted as code execution ends.
+ var can be accessed using window and let is deleted as code execution ends(saves memory)
 */

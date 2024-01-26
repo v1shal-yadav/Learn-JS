@@ -3,7 +3,7 @@
 
 call by value, changes happens to copy.
 
-7 types: null, number, string, symbol, Boolean, undefined, BigInt
+7 types: null, number, string, symbol, BigInt, Boolean, undefined
 
 JavaScript is a dynamically typed language, which means that data types of variables are determined by the value 
 they hold at runtime and can change throughout the program as we assign different values to them.
@@ -22,7 +22,7 @@ const bigNumber = 124962694518n // using n will make it BigInt
 const id = Symbol('123')
 const anotherID = Symbol('123')
 
-console.log(id === anotherID)
+console.log(id === anotherID) // false
 
 /* 
         *** Reference (Non - primitive) *** 
@@ -62,10 +62,8 @@ let userOne = {
 let userTwo = userOne 
 userTwo.email = "vishal@apple.com"
 
-console.log(userOne.email)
-console.log(userTwo.email)
-
-
+console.log(userOne.email) // vishal@apple.com
+console.log(userTwo.email) // vishal@apple.com
 
 
 

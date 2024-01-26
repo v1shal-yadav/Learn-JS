@@ -58,13 +58,28 @@ which means it tries to convert the operands to the same type before making the 
 
 */
 console.log("2" < 1) // => false 
+
 console.log("02" < 1) // => false 
 
 console.log(null > 0) // => false 
-console.log(null == 0) // => false 
-console.log(null >= 0) // => true
 
-// If "undefined" is used in case of null, then all three will give false as an output. 
+console.log(null == 0) // => false 
+
+console.log(null >= 0 ); // true
+
+console.log(null <= 0); // true
+
+console.log(null < 0); // false
+
+console.log(null > 0); // false
+
+console.log(null + 1 === 1); // true
+
+console.log( 1 / null === Infinity); // true
+
+console.log(Math.pow(42, null) === 1); // true
+
+// If "undefined" is used in case of null, then all will give false as an output. 
 
 /*
 The reason is that an equality check == and comparisons > < >= <= work differently. 

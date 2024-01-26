@@ -7,7 +7,8 @@ const balance = new Number(200) // you are specially mentioning that it is a num
 console.log(balance);
 
 console.log(balance.toString().length); // => 3
-console.log(balance.toFixed(3)); // => 200.000
+console.log(balance.toFixed(3)); // => 200.000 
+console.log(typeof balance.toFixed(3)); // string
 
 const otherNumber = 4846.5342 
 console.log(otherNumber.toPrecision(3));
@@ -18,8 +19,6 @@ console.log(typeof check); // => string
 
 const hundreds = 10000000
 console.log(hundreds.toLocaleString('en-IN')); // by default US standard
-
-
 
 //                           +++++++ maths +++++
 

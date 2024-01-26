@@ -5,7 +5,7 @@ const repoCount = 4
 
 console.log(name + repoCount + " value") // => this practise is not recommeded.
 
-// recomeded using `` backticks
+// recomended use of `` backticks
 console.log(`Hello, my name is ${name} and my repo count is ${repoCount}`)
  
 const gameName = new String("bgmi") // => String Object:

@@ -8,12 +8,12 @@ let isLoggedIn = true;
   
 //      *** primitve datatypes *** 
 // number => 2 to the power 53
-// bigInt 
-// string => ""
-// boolean = true/false 
 // null => standalone value (representation of empty value)
-// undefined => value is not assigned. 
+// bigInt 
+// boolean = true/false 
+// string => ""
 // symbol => unique 
+// undefined => value is not assigned. 
 
 // *** object ***
 
