@@ -1,2 +1,7 @@
-const hundreds = 10000000
-console.log(hundreds.toLocaleString('en-IN'));
+const myDate = new Date() 
+
+
+
+console.log(myDate.toLocaleString('Default', { 
+    month:"long",
+}));
