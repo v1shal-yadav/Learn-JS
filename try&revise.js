@@ -1,4 +1,7 @@
-
-const addTwo = (num1, num2) =>  r{username: "vishal"}//{ username: 'vishal' }
-
-console.log(addTwo(4,5)); 
+const userEmail = []
+if(userEmail.length.length === 0) {
+    console.log("Array is empty");
+}
+else{
+    console.log("false");
+}

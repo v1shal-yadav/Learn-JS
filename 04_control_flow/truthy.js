@@ -1,6 +1,6 @@
 // falsy values 
-
-//false, 0, -0, BigInt 0n, "", null, undefined, NaN
+ 
+// false, 0, -0, BigInt 0n, "", null, undefined, NaN
 
 // others values are truthy values.
 // ex- "0", 'false', " ", [], {}, function(){}
