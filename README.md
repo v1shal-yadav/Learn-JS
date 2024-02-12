@@ -2,8 +2,8 @@
 Learning javascript with chai aur code youtube channel
 
 # Note: 
-* using alert/prompt(etc) will temporarily pause the execution until the alert window being closed.     
-*   writing a javascript in different file benefit: readibility, modular, browser caching. 
+* Using alert/prompt(etc.) will temporarily pause the execution until the alert/prompt window being closed.     
+* Writing a javascript(not in body) in different file benefits: readibility, modular, browser caching. 
 
 # window object
 * The window object represts an open window in a browser. It is browser's objects(not javascript's) & is automatically created by browser. 
@@ -13,9 +13,9 @@ Learning javascript with chai aur code youtube channel
 # What is DOM? 
 * When a web page is loaded, the browser creates a Document Object Model (DOM) of the page. 
 * It basically means all the HTML code written and attached with javascript can be accessed inside javascript. 
-* All the HTML codes are converted into object inside javascript and are called document(availabel in window object).
+* All the HTML codes are converted into object inside javascript and are called document(available in window object).
 * console.log --> print and console.dir --> documents -> properties and methods.
-* dynamic changes/manipulatio --> use DOM 
+* dynamic changes/manipulation --> use DOM 
 * If we write javascript in head, we can't access dom elements. 
 
 # Selecting DOM
@@ -37,17 +37,29 @@ Learning javascript with chai aur code youtube channel
 # Defination: 
 * attributes: additional information inside our element. 
 * getAttribute(attr) // to get into the attribute value. 
-* setAttribute(attr, value) // to set the attribute value
+* setAttribute(attr, value) // to set the attribute value (overwrite)
 * style: node.style
 
 # Insert Elements
 * let el = document.createElement("div)
-• node.append(el) //adds at the end of node (inside)
-• node.prepend(el) //adds at the start of node (inside)
-• node.before(el) //adds before the node (outside)
-• node.after(el) //adds after the node (outside)
+* node.append(el) //adds at the end of node (inside)
+* node.prepend(el) //adds at the start of node (inside)
+* node.before(el) //adds before the node (outside)
+* node.after(el) //adds after the node (outside)
+* node.classList.add("") 
+* node.classList.remove("") 
 
 # Delete Element
-• node.remove() //removes the node
+* node.remove() //removes the node
 
+# example: 
+
+let newßtn = document.createElement ("button"');
+newßtn. innerText = "click me!";
+console. log (newßtn) ;
+
+let div = document. querySelector ("div");
+div. append (newßtn) : I
+
+* styling added in the javascript are inline. 
 
