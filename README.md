@@ -54,12 +54,11 @@ Learning javascript with chai aur code youtube channel
 
 # example: 
 
-let newßtn = document.createElement ("button"');
-newßtn. innerText = "click me!";
-console. log (newßtn) ;
+let newBtn = document.createElement("button"');
+newBtn.innerText = "click me!";
+console.log (newBtn) ;
 
-let div = document. querySelector ("div");
-div. append (newßtn) : I
-
-* styling added in the javascript are inline. 
+let div = document.querySelector("div");
+div.append(newBtn) : I
+* styling added in the javascript are inline.   
 
