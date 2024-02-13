@@ -53,12 +53,44 @@ Learning javascript with chai aur code youtube channel
 * node.remove() //removes the node
 
 # example: 
-
 let newBtn = document.createElement("button"');
 newBtn.innerText = "click me!";
 console.log (newBtn) ;
 
 let div = document.querySelector("div");
 div.append(newBtn) : I
+
 * styling added in the javascript are inline.   
+
+# Events in JS
+    The change in the state of an object is known as an Event.
+    Events are fired to notify code of "interesting changes" that may affect code execution.
+    Pullupitor
+    • Mouse events (click, double click etc.)
+    • Keyboard events (keypress, keyup, keydown)
+    • Form events (submit etc.)
+    • Print event & many more
+
+# Event handling: 
+* node.event = () => {
+    // handle here
+}
+inline handle < JS handle (greater priority) 
+
+# Event Object
+* It is a special object that has details about the event.
+* All event handlers have access to the Event Object's properties and methods.
+
+    node.event = (e) => {
+    //handle here
+    }
+
+    e.target, e.type, e.clientX, e.clientY
+
+* inline handling< JS handling < Event listners. 
+
+# Event Listeners
+* node.addEventListener( event, callback) // callback is a function also known as event handler. 
+* node.removeEventListener( event, callback)
+* Note: the callback reference should be same to remove
 
