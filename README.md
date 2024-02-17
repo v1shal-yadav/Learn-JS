@@ -94,3 +94,37 @@ inline handle < JS handle (greater priority)
 * node.removeEventListener( event, callback)
 * Note: the callback reference should be same to remove
 
+# classes and objects: 
+
+# Prototypes in JS: 
+* A javaScript object is an entity having state and behavior (properties and method).
+JS objects have a special property called prototype(type -> reference to object)
+We can set prototype using _ _ proto _ _
+*If object & prototype have same method, object's method will be used.
+prototype: default object inside object having its own properties and methods.
+
+# Classes in JS
+Class is a program-code template for creating objects.
+Those objects will have some state (variables) & some behaviour (functions) inside it.
+class MyClass{
+    constructor {... }
+    myMethod() {... }
+}
+let myObj = new MyClass() ;
+
+# Inheritance in JS:
+
+* inheritance is passing down properties & methods from parent class to child class.
+
+    class Parent {
+    }
+    class Child extends Parent {
+    }
+    ** child is derived class. 
+
+* If Child & Parent have same method, child's method will be used. [Method Overriding]
+
+# super Keyword
+The super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
+super(args) // calls Parent's constructor
+super.parentMethod(args )
