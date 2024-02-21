@@ -69,6 +69,7 @@ console.log(real_another_array); // => [1, 2, 3, 4, 5, 6, 1, 2, 3]
 
 console.log(Array.isArray("vishal")); // => false 
 console.log(Array.from("vishal"));    // => [ 'v', 'i', 's', 'h', 'a', 'l' ]
+
 console.log(Array.from({name: "vishal"})); // => [] (interesting, asked in interview)
 
 // Array.of method 

@@ -7,10 +7,10 @@ let age = 22
 let isLoggedIn = true;   
   
 //      *** primitve datatypes *** 
-// number => 2 to the power 53
-// null => standalone value (representation of empty value)
 // bigInt 
 // boolean = true/false 
+// null => standalone value (representation of empty value)
+// number => 2 to the power 53
 // string => ""
 // symbol => unique 
 // undefined => value is not assigned. 

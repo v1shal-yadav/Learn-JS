@@ -24,7 +24,7 @@ undefined => NaN
 //                 *** operations *** 
 
 let value = 3
-let negValue = -value
+let negValue = - value
 
 console.log(negValue) 
 
@@ -41,16 +41,25 @@ let str2 = "vishal"
 let str3 = str + str2
 
 console.log(1 + 2) // => 3
+
 console.log(1 + "2") // => 12
 console.log("1" + 2) // => 12
+
 console.log("1" + 2 + 2) // 122
 console.log(1 + 2 + "2") // => 32
+console.log("1" + 2 * 2)// => 14
+
+console. log(1 + "2" + "2"); // "12" + "2" = "122"
+console. log (1 + +"2" + "2"); // 1 +2 = 3 // 3 + "2" = "32"
+console. log (1 + -"1" + "2"); // 1 - 1 = 0 // 0 + "2" = "02"
+console. log(+"1" + "1" + "2"); // 1 + "1" = "11" + "2" = "112"
+console. log( "A" - "B" + "2"); // Nan + "2" = "Nan2"
+console. log( "A" - "B" + 2);// Nan + 2 = NaN
 
 console.log(+true) // => 1
 console.log(+"") // => 0
 // The unary plus operator (+) in JavaScript is designed to convert its operand to a number. 
 // It's clearer to use Number() or parseInt() for better readability and to avoid any confusion.
-
 /*  
 
 In JavaScript, when you use the less-than operator (<) to compare values, JavaScript performs a type coercion, 
@@ -89,16 +98,3 @@ That's why (3) null >= 0 is true and (1) null > 0 is false.  */
 // strict check ( === ) 
 
 console.log("2" === 2) // => false 
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -21,9 +21,12 @@ for (const greet of greetings) {
 
 //                  *************
 
-// *** Maps ***
-/* The Map object holds key-value pairs and remembers the original insertion order of the keys. 
-Map objects are collections of key-value pairs. A key in the Map may only occur once; it is unique in the Map's collection. 
+/* 
+        *** Maps ***
+
+* The Map object holds key-value pairs and remembers the original insertion order of the keys. 
+* Map objects are collections of key-value pairs. 
+* A key in the Map may only occur once; it is unique in the Map's collection. 
 */
 
 const map = new Map()

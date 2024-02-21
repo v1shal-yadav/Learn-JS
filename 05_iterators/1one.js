@@ -1,19 +1,14 @@
 // for
 
-// for (let index = 0; index < array.length; index++) {
-//     const element = array[index];
-    
-// }
+for (let index = 0; index < array.length; index++) {
+     const element = array[index];
+}
+
 let myArray = ["flash", "batman", "superman"]
 for (let index = 0; index < myArray.length; index++) {
     const element = myArray[index];
     console.log(element); 
 }
-/* 
-    *** break and continue ***
-The break statement "jumps out" of a loop.
-The continue statement "jumps over" one iteration in the loop.
-*/
 
 // *** while ***
 
@@ -35,3 +30,8 @@ while(score <= 10)
 
 // 
 
+/* 
+*** break and continue ***
+The break statement "jumps out" of a loop.
+The continue statement "jumps over" one iteration in the loop.
+*/

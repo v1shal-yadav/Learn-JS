@@ -5,10 +5,11 @@ const repoCount = 4
 
 console.log(name + repoCount + " value") // => this practise is not recommeded.
 
-// recomended use of `` backticks
+// use of `` backticks recomended
 console.log(`Hello, my name is ${name} and my repo count is ${repoCount}`)
  
 const gameName = new String("bgmi") // => String Object:
+
 /*
 The String object provides additional methods and properties that can be used with strings.
 JavaScript automatically coerces between primitive strings and String objects when necessary,

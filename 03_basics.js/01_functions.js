@@ -1,4 +1,5 @@
 // *** functions *** 
+
 function sayMyName() {
     console.log("V");
     console.log("I");
@@ -40,7 +41,9 @@ function loginUserMessge(username = "Sam") {
     return `${username} just logged in`
 }
 
+
 // rest operator
+
 function calculateCartPrice(...num1) { 
     return num1
 }

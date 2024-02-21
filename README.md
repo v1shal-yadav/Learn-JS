@@ -1,7 +1,13 @@
 # Learn-JS
 Learning javascript with chai aur code youtube channel
 
-### Note: 
+## The JavaScript code is being executed in two-phase, 
+
+* The first one is the memory allocation phase during this all the variables and function definitions get stored inside the memory heap. The JavaScript assigns undefined to each variable in this phase.
+* The second one is a thread of the execution phase, during this the code written inside the JavaScript file is being executed.
+Each variable holds the value undefined till the program reaches the line where we have assigned that variable. After that line, the variable’s undefined value gets replaced by the original value.
+
+## Note: 
 * Using alert/prompt(etc.) will temporarily pause the execution until the alert/prompt window being closed.     
 * Writing a javascript(not in body) in different file benefits: readibility, modular, browser caching. 
 
@@ -103,7 +109,7 @@ We can set prototype using _ _ proto _ _
 *If object & prototype have same method, object's method will be used.
 prototype: default object inside object having its own properties and methods.
 
-## Classes in JS
+## Classes in JS:
 Class is a program-code template for creating objects.
 Those objects will have some state (variables) & some behaviour (functions) inside it.
 class MyClass{
@@ -139,3 +145,51 @@ super.parentMethod(args )
     catch (err ) { //err is error object
         ... handling error
     }
+
+## Sync in JS
+### Synchronous
+* Synchronous means the code runs in a particular sequence of instructions given in the program.
+* Each instruction waits for the previous instruction to complete its execution.
+
+### Asynchronous
+* Due to synchronous programming, sometimes imp instructions get blocked due to some previous instructions, which causes a delay in the Ul.
+* Asynchronous code execution allows to execute next instructions immediately and doesn't block the flow.
+
+### Callbacks
+* A callback is a function passed as an argument to another function.
+
+### Callback Hell
+* Callback Hell : Nested callbacks stacked below one another forming a pyramid structure.
+    (Pyramid of Doom)
+* This style of programming becomes difficult to understand & manage.
+
+### Promises
+* Promise is for "eventual" completion of task. It is an object in JS.
+* It is a solution to callback hell.
+* Three states: pending, resolved/fulfilled, rejected. 
+* let promise = new Promise( (resolve, reject) => {....} )
+                            Function with 2 handlers
+* resolve & reject are callbacks provided by JS. 
+
+* .then( ) & .catch()
+* promise.then ((res) => {....})
+* promise.catch ((err) => {....})
+
+### Async-Await
+async function always returns a promise.
+async function myFunc() { .... }
+await pauses the execution of its surrounding async function until the promise is settled.
+
+### IIFE : Immediately Invoked Function Expression
+IIFE is a function that is called immediately as soon as it is defined.
+(function () {
+// ...
+})();
+
+(() => {
+// ..
+})();
+
+(async () => {
+//...
+})();

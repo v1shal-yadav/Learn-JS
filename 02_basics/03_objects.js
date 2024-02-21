@@ -1,3 +1,12 @@
+/* Objects can be declared by two types: 
+
+    1. literals(no singleton formed) and 
+    2. constructors(singleton formed)
+    
+objects.create => this is constructor method
+Mostly values are accessed using dots, but there are some cases we have to use [] we don't have any another option.
+*/
+
 // const tinderUser = new Object() // => singleton object
 const tinderUser = {} // => non-singleton
 
@@ -28,7 +37,7 @@ console.log(obj3); // => { obj1: { '1': 'a', '2': 'b' }, obj2: { '2': 'a', '3': 
 
 const obj4 = Object.assign(obj1, obj2) 
 console.log(obj4); // => { '1': 'a', '2': 'a', '3': 'b' }
-// obj1 will change but not obj2 
+// obj1 will change but not obj2. 
 
 /*
 Object.assign modifies the target object (obj1 in this case) by merging properties from the source objects (obj2). When there's a conflict (e.g., both objects have a property with the same key), the value from the last object in the argument list (obj2 in this case) overwrites the existing value.
@@ -86,9 +95,3 @@ console.log(instructor);
 //     "coursename": "Js in hindi"
 //     "price": "free"
 // }
-
-
-
-
-
-

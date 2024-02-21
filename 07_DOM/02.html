@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SetTimeout</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Chai aur Code</h1>
-    <button id="stop">STOP</button>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
 </body>
 <script>
-    const changeText = function() {
-        document.querySelector('h1').innerHTML = "best JS series"
+    const sayDate = function() {
+        console.log("Vishal", Date.now());
     }
-    // setTimeout(function(){
-    //     console.log("Vishal")
-    // }, 2000)
-    const changeMe = setTimeout(changeText, 2000)
-    document.querySelector('#stop').addEventListener('click', function() {
-        clearTimeout(changeMe)
-        console.log("stopped")
-    })
+    const intervalId = setInterval(sayDate, 1000)
+    document.querySelector('#stop').addEventListener(
+        'click', (function() {
+            clearInterval(intervalId)
+            console.log("stopped");
+        })
+    )
 </script>
 </html>
