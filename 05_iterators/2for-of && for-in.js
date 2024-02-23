@@ -54,13 +54,14 @@ including inherited enumerable properties.
 for (const key in object) {
     // code to be executed
 }
+
 const myObject = {
     js: 'javascript',
     cpp: 'c++',
     rb: 'ruby',
     swift: 'swift by apple'
 }
-// map is not iteratable using forin loop
+// map is not iteratable using for..in loop
 for (const key in myObject) {
     console.log(`${key} shortcut for ${myObject[key]}`);
 }

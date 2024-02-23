@@ -8,7 +8,7 @@ Learning javascript with chai aur code youtube channel
 Each variable holds the value undefined till the program reaches the line where we have assigned that variable. After that line, the variable’s undefined value gets replaced by the original value.
 
 ## Note: 
-* Using alert/prompt(etc.) will temporarily pause the execution until the alert/prompt window being closed.     
+* Using alert/prompt(etc.) will temporarily pause the execution until alert/prompt window being closed.     
 * Writing a javascript(not in body) in different file benefits: readibility, modular, browser caching. 
 
 ## window object
@@ -106,7 +106,7 @@ inline handle < JS handle (greater priority)
 * A javaScript object is an entity having state and behavior (properties and method).
 JS objects have a special property called prototype(type -> reference to object)
 We can set prototype using _ _ proto _ _
-*If object & prototype have same method, object's method will be used.
+* If object & prototype have same method, object's method will be used.
 prototype: default object inside object having its own properties and methods.
 
 ## Classes in JS:
@@ -146,13 +146,14 @@ super.parentMethod(args )
         ... handling error
     }
 
-## Sync in JS
+## Sync in JS: 
+
 ### Synchronous
 * Synchronous means the code runs in a particular sequence of instructions given in the program.
 * Each instruction waits for the previous instruction to complete its execution.
 
 ### Asynchronous
-* Due to synchronous programming, sometimes imp instructions get blocked due to some previous instructions, which causes a delay in the Ul.
+* Due to synchronous programming, sometimes imp instructions get blocked due to some previous instructions, which causes a delay in the UI.
 * Asynchronous code execution allows to execute next instructions immediately and doesn't block the flow.
 
 ### Callbacks
@@ -163,25 +164,139 @@ super.parentMethod(args )
     (Pyramid of Doom)
 * This style of programming becomes difficult to understand & manage.
 
+``` javascript 
+        function getData(dataID, getNextData) {
+
+            setTimeout(() => {
+                console.log("data", dataID);
+                getNextData(2);
+            }, 1000);
+
+        }
+        getData(1,() => {
+            getData(2, () => {
+                getData(3, () => {
+                    getData(4)
+        })
+    })
+})
+
+```
+
 ### Promises
 * Promise is for "eventual" completion of task. It is an object in JS.
 * It is a solution to callback hell.
 * Three states: pending, resolved/fulfilled, rejected. 
-* let promise = new Promise( (resolve, reject) => {....} )
-                            Function with 2 handlers
-* resolve & reject are callbacks provided by JS. 
 
-* .then( ) & .catch()
-* promise.then ((res) => {....})
-* promise.catch ((err) => {....})
+``` javascript 
 
-### Async-Await
+let promise = new Promise( (resolve, reject) => {....} )
+                        Function with 2 handlers
+// resolve & reject are callbacks provided by JS. 
+
+.then( ) & .catch()
+promise.then ((res) => {....})
+promise.catch ((err) => {....})
+
+let promise = new Promise((resolve, reject) => {
+    console.log("I am a Promise");
+    resolve("success")
+    reject("some error occured")
+})
+```
+
+## 
+A JavaScript Promise object can be:
+• Pending : the result is undefined
+• Resolved : the result is a value (fulfilled)      resolve (result)
+• Rejected : the result is an error object          reject (error)
+
+*Promise has state (pending, fulfilled) & some result (result for resolve & error for reiect).
+
+``` javascript 
+const getPromise =  () => {
+    return new Promise((resolve, reject) => {
+        console.log("I am Promise");
+        // resolve("success");
+        reject("error")
+    }) ;
+};
+
+let promise = getPromise(); 
+promise.then(() => {
+    console.log("promise fulfilled");
+}); 
+
+promise.catch(() => {
+    console.log("promise rejected");
+})
+```
+
+### Promise chain
+``` javascript 
+
+function getData(dataID, getNextData) {
+
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data", dataID);
+            if(getNextData){
+                getNextData(2);
+            }
+            resolve(dataID)
+        }, 2000);
+    });
+}
+
+getData(1)
+    .then((res) => {
+        return getData(2); 
+    })
+    .then((res) => {
+        console.log(res);
+})
+
+```
+
+## Async-Await
 async function always returns a promise.
 async function myFunc() { .... }
 await pauses the execution of its surrounding async function until the promise is settled.
 
-### IIFE : Immediately Invoked Function Expression
+``` javascript 
+
+function api() {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            console.log("weather data");
+            resolve(200);
+        }, 2000);
+    })
+}
+async function getWeatherData() {
+    await api(); // 1st call  
+    await api(); // 2nd call
+
+}
+
+async function getAllData () {
+    await getAllData(1); 
+    await getAllData(2); 
+    await getAllData(3); 
+}
+
+(async function () {
+    await getAllData(1); 
+    await getAllData(2); 
+    await getAllData(3); 
+})();
+```
+
+### IIFE : Immediately Invoked Function Expression: 
+
 IIFE is a function that is called immediately as soon as it is defined.
+``` javascript 
+
 (function () {
 // ...
 })();
@@ -193,3 +308,26 @@ IIFE is a function that is called immediately as soon as it is defined.
 (async () => {
 //...
 })();
+
+```
+
+# fetch API (Application Planning Interface); 
+
+* The Fetch API provides an interface for fetching (sending/receiving) resources.
+* It uses Request and Response objects.
+* The fetch() method is used to fetch a resource (data).
+* let promise = fetch( url, [options] )
+* During API calls, the page does not reload, and information is updated in real-time.
+* API uses GET request to get data. 
+
+### Understanding Terms
+AJAX is Asynchronous JS & XML
+JSON is JavaScript Object Notation
+
+json() method: returns a second promise that resolves with the result of parsing the response body text as JSON. 
+(Input is JSON, output is JS object)
+
+### Requests & Response
+HTTP Verbs
+Response Status Code
+*HTTP response headers also contain details about the responses, such as content type, HTTP status code etc.
