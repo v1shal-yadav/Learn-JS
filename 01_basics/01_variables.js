@@ -28,6 +28,8 @@ To master javascript, master objects and web events.
  variable can be redeclared with var but not with let 
  var can be accessed using window and let is deleted as code execution ends(saves memory)
 
+*** undefine vs not define 
+
  In JavaScript, both are related to memory space. If the variable name which is being accessed doesn’t exist in memory space then it would be not defined, and if exists in memory space but hasn’t been assigned any value till now, then it would be undefined.
  Everything which gets a space in memory will contain undefined until we assign a value to that memory space.
 */

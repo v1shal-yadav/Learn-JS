@@ -17,7 +17,7 @@ function printMe (item) {
 coding.forEach(printMe)
 
 // parameters which forEach loop have
-
+ 
 const myCoding = [
     {
         languageName: "javascript",

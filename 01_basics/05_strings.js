@@ -7,7 +7,7 @@ console.log(name + repoCount + " value") // => this practise is not recommeded.
 
 // use of `` backticks recomended
 console.log(`Hello, my name is ${name} and my repo count is ${repoCount}`)
- 
+
 const gameName = new String("bgmi") // => String Object:
 
 /*
@@ -47,7 +47,7 @@ console.log(url.includes('vishal')); // => true
 console.log(url.split('i')); // => [ 'https://v', 'shal.com/v', 'shal%20yadav' ]
 
 /*
-strings need to be practised and use backticks.
+strings need to be practised and use backticks(recomended).
 */
 
 

@@ -21,6 +21,7 @@ null => 0
 undefined => NaN
 */
 
+
 //                 *** operations *** 
 
 let value = 3
