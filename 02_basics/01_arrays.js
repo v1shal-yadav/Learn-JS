@@ -38,7 +38,6 @@ const myn2 = myArr.splice(1,3)
 console.log(myn2); // [4,6,9]
 console.log("C", myArr); // => C [ 2, 8 ]
 
-
 /**
  * JavaScript arrays are resizable and can contain a mix of different data types.
  * JavaScript arrays are not associative arrays and so, array elements cannot be accessed using arbitrary strings as indexes.

@@ -28,6 +28,7 @@ console.log(newString);
 
 const anotherString = gameName.slice(0,3) // charAt(2) will not be inculded in newString
 console.log(anotherString);
+
 // A negative number selects from the end of the string.
 /*
 const gameName = "hitesh_hc"

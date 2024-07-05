@@ -46,7 +46,7 @@ const addTwo = function(num) {
     return num + 2
 }
 /**
- * JavaScript in strict mode does not allow variables to be used if they are not declared. "use strict"
- * JavaScript Declarations are Hoisted but Initializations are Not Hoisted
+ * JavaScript in strict mode does not allow variables to be used if they are not declared. "use strict".
+ * JavaScript Declarations are Hoisted but Initializations are Not Hoisted.
  * Function expressions and class expressions are not hoisted. 
  */

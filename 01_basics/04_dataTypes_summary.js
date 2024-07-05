@@ -53,8 +53,8 @@ let myEmail = "vishal@gmail.com"
 let newEmail = myEmail 
 newEmail = "vishal@outlook.com"
 
-console.log(myEmail)
-console.log(newEmail)
+console.log(myEmail) // vishal@gmail.com
+console.log(newEmail) // vishal@outlook.com 
 
 let userOne = {
     email: "vishal@google.com"

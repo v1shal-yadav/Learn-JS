@@ -1,0 +1,61 @@
+setTimeout(() => {
+    console.log("timeout");
+}, 0)
+Promise.resolve().then(() => console.log('promise'))
+console.log('end');
+
+//2 
+async function foo() {
+    return 'hello world'
+}
+const result  = foo() 
+console.log(result);
+
+//3
+console.log([1,2] == [1,2]);
+
+//4
+const user1 = {
+    name: 'john', 
+    age: '25', 
+    address: {
+        city: 'mumbai', 
+        state: 'maharashtra'
+    },
+}
+const user2 = user1
+user2.name = 'ramesh'
+user2.address.city = 'pune'
+
+console.log(user1);
+console.log(user2);
+
+//5
+const numbers = [0, 1, 2, 3, 4, 5]
+
+const newArray = numbers.filter ((i)=> {
+    return i<3;
+})
+console.log (newArray) ;
+
+OR 
+const numbers1 = [0, 1, 2, 3, 4, 5]
+
+const newArray1 = numbers1.filter ( i=> i<3).map((val) => {
+    return val + 5; 
+})
+console.log (newArray1) ;
+
+//7
+const str = "hi i am vishal"
+
+const newStr = str.split(" "); 
+
+const str1 = newStr.map((word) => {
+    return word.charAt(0).toUpperCase() + word.slice(1);  // OR return word[0].toUpperCase() + word.slice(1); 
+})
+const str2 = str1.join(" ")
+
+console.log(str2);
+
+

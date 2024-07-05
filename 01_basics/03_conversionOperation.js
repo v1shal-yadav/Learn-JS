@@ -2,8 +2,8 @@ let score = "45"
 console.log(typeof score) // => string
 
 let valueInNumber = Number (score) // => Number starts with capital letter here. 
-console.log(typeof valueInNumber) // => number
-
+console.log(typeof valueInNumber) // => number 
+ 
 let score1 = "45abc" 
 let score1InNumber = Number (score1)
 
@@ -94,7 +94,7 @@ console.log(Math.pow(42, null) === 1); // true
 /*
 The reason is that an equality check == and comparisons > < >= <= work differently. 
 Comparisons convert null to a number, treating it as 0. 
-That's why (3) null >= 0 is true and (1) null > 0 is false.  */
+*/
 
 // strict check ( === ) 
 

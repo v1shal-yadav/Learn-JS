@@ -34,7 +34,6 @@ const obj3 = {obj1, obj2}
 console.log(obj3); // => { obj1: { '1': 'a', '2': 'b' }, obj2: { '2': 'a', '3': 'b' } }
 // obj1, obj2 both remains unchanged.
 
-
 const obj4 = Object.assign(obj1, obj2) 
 console.log(obj4); // => { '1': 'a', '2': 'a', '3': 'b' }
 // obj1 will change but not obj2. 
@@ -46,7 +45,6 @@ Object.assign modifies the target object (obj1 in this case) by merging properti
 const obj5 = Object.assign({}, obj1, obj2)//=> Object.assign(target, source),this can be seen in production grade codes.
 console.log(obj5); // => // => { '1': 'a', '2': 'a', '3': 'b' }
 // obj1, obj2 both remains unchanged.
-
 
 // console.log( obj4 === obj5); // = false
 // console.log( obj1 === obj4) // => true

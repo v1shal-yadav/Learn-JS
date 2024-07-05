@@ -1,6 +1,23 @@
+// Functions running in parallel with other functions are called asynchronous
+// A good example is JavaScript setTimeout()
+
+// A JavaScript Promise object can be:
+
+// Pending
+// Fulfilled
+// Rejected
+// The Promise object supports two properties: state and result.
+
+// While a Promise object is "pending" (working), the result is undefined.
+
+// When a Promise object is "fulfilled", the result is a value.
+
+// When a Promise object is "rejected", the result is an error object.
+
+// A Promise is an object representing the eventual completion or failure of an asynchronous operation.
 // The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
-// with new keyword you will get new instance 
-// .then() is related to resolve, we get a call back in .then(), it automatically receives an argument
+// with new keyword you will get new instance. 
+// .then() is related to resolve, we get a call back in .then(), it automatically receives an argument.
 
 const promiseOne = new Promise(function(resolve, reject) {
     // Do an async task
@@ -68,9 +85,10 @@ const promiseFive = new Promise(function(resolve, reject){
         }
     }, 1000)
 });
-// async/await works exactly same as .then() and .catch(), waits for sometime and move forward otherwise provides error, it don't handle catch gracefully
+// async/await works exactly same as .then() and .catch(), waits for sometime and move forward otherwise provides error, it don't handle catch gracefully.
 // Asynchronous operations are common in JavaScript, such as fetching data from a server, reading a file, or waiting for a timeout.
 // Inside an async function, you can use the await keyword to pause the execution of the function until the Promise is resolved. It can only be used inside an async function:
+
 async function consumePromiseFive(){
     try{
         const response = await promiseFive

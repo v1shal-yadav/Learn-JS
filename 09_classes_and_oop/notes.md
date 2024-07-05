@@ -1,6 +1,6 @@
 # javascript and classes
 
-* javascript is primarily a prototype bases-language its classes are primarily sytactic sugar over existing prototype-based inheritance mechanisms.
+* javascript is primarily a prototype bases-language its classes are primarily syntactic sugar over existing prototype-based inheritance mechanisms.
 
 ## OOP( a programming paradigm)
 

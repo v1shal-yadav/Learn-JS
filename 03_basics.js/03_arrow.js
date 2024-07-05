@@ -32,7 +32,7 @@ function chai() {
 chai()
 const chai = function () {
     let username = "vishal"
-    console.log(this); // will get so many valuesk
+    console.log(this); // will get so many values
     console.log(this.username) // => undefined
 }
 chai()
