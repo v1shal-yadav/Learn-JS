@@ -12,16 +12,17 @@ Each variable holds the value undefined till the program reaches the line where 
 * Writing a javascript(not in body) in different file benefits: readibility, modular, browser caching. 
 
 ## window object
-* The window object represts an open window in a browser. It is browser's objects(not javascript's) & is automatically created by browser. 
+* The window object represents an open window in a browser. It is browser's objects(not javascript's) & is automatically created by browser. 
 * It is global object with lots of properties and methods.   
 * console.log("hello") and window.console.log("hello") both will print the same. 
 
 ## What is DOM? 
+* HTML DOM (Document Object Model) is a hierarchical representation of HTML documents.
 * When a web page is loaded, the browser creates a Document Object Model (DOM) of the page. 
 * It basically means all the HTML code written and attached with javascript can be accessed inside javascript. 
 * All the HTML codes are converted into object inside javascript and are called document(available in window object).
 * console.log --> print and console.dir --> documents -> properties and methods.
-* dynamic changes/manipulation --> use DOM 
+* dynamic changes/manipulation --> use DOM. 
 * If we write javascript in head, we can't access dom elements. 
 
 ## Selecting DOM
@@ -311,7 +312,7 @@ IIFE is a function that is called immediately as soon as it is defined.
 
 ```
 
-# fetch API (Application Planning Interface); 
+# fetch API (Application Programming Interface); 
 
 * The Fetch API provides an interface for fetching (sending/receiving) resources.
 * It uses Request and Response objects.
@@ -331,3 +332,37 @@ json() method: returns a second promise that resolves with the result of parsing
 HTTP Verbs
 Response Status Code
 *HTTP response headers also contain details about the responses, such as content type, HTTP status code etc.
+
+# What is a first class function
+In Javascript, functions are first class objects. First-class functions means when functions in that language are treated like any other variable.
+
+# What is a first order function
+A first-order function is a function that doesn’t accept another function as an argument and doesn’t return a function as its return value.
+
+const firstOrder = () => console.log("I am a first order function!");
+
+# What is a higher order function
+A higher-order function is a function that accepts another function as an argument or returns a function as a return value or both. The syntactic structure of higher order function will be as follows,
+
+``` javascript 
+const firstOrderFunc = () =>
+  console.log("Hello, I am a First order function");
+const higherOrder = (ReturnFirstOrderFunc) => ReturnFirstOrderFunc();
+higherOrder(firstOrderFunc);
+``` 
+
+You can also call the function which you are passing to higher order function as callback function.
+
+* Hoisting is a JavaScript mechanism where variables, function declarations and classes are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation. 
+
+* Web storage is an API that provides a mechanism by which browsers can store key/value pairs locally within the user's browser, in a much more intuitive fashion than using cookies.
+
+* A cookie is a piece of data that is stored on your computer to be accessed by your browser. Cookies are saved as key/value pairs.
+
+* Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
+
+* The preventDefault() method cancels the event if it is cancelable, meaning that the default action or behaviour that belongs to the event will not occur.
+
+* The clearTimeout() function is used in javascript to clear the timeout which has been set by setTimeout()function before that.
+
+* The clearInterval() function is used in javascript to clear the interval which has been set by setInterval() function.

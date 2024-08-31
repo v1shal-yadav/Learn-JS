@@ -58,4 +58,50 @@ const str2 = str1.join(" ")
 
 console.log(str2);
 
+// optimised approach, not traversing whole tree only creating a textnode and inserting 
+function addOptionLanguage(langName) {
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector('.language').appendChild(li)
+}
+addOptionLanguage('golang')
 
+// Edit
+const secondLang = document.querySelector("li:nth-child(2)")
+// secondLang.innerHTML = "mojo" // prefer not to use
+const newli = document.createElement('li')
+newli.textContent  = "mojo"
+secondLang.replaceWith(newli) 
+
+// edit 
+const firstLang = document.querySelector("li:first-child")
+firstLang.outerHTML = '<li>TypeScript</li>'
+
+// remove
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove()
+
+const promiseFour = new Promise(function(resolve, reject) {
+    setTimeout(function() {
+        resolve({username: "chai", email: "chai@example.com"})
+    }, 1000)
+})
+
+promiseFour.then((user) => {
+    console.log(user);
+    return user.username
+}).then((username) => {
+    console.log(username);
+}).catch(function(error){
+    console.log(error);
+}).finally(() => console.log("The promise is either resolved or rejected"))
+
+function x(){
+    var a = 20; 
+    function y() {
+        console.log(a)
+    }
+    return y; 
+}
+var z = x(); 
+console.log(z); 

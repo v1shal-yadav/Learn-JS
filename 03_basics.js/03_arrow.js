@@ -56,6 +56,3 @@ const addTwo3 = (num1, num2) => ({username: "vishal"}) //{ username: 'vishal' }
 // Without the parentheses, it would be interpreted as a block and not an object literal.
 
 console.log(addTwo(4,5)); 
-
-
-

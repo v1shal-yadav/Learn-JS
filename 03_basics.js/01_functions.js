@@ -30,6 +30,7 @@ const result = addTwoNUmbers(4,1)
 function loginUserMessge(username) {
     return `${username} just logged in`
 }
+
 console.log(loginUserMessge("Vishal")); // => Vishal just logged in
 console.log(loginUserMessge()); // => undefined just logged in
 
@@ -40,7 +41,6 @@ function loginUserMessge(username = "Sam") {
     }
     return `${username} just logged in`
 }
-
 
 // rest operator
 

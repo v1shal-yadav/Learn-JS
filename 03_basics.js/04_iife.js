@@ -20,4 +20,3 @@
 * sometime we face problem due gloabal scope pollution.
 * so to remove those pollution/variables we are using IIFE.
  */
-

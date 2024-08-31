@@ -6,6 +6,7 @@
 // Pending
 // Fulfilled
 // Rejected
+
 // The Promise object supports two properties: state and result.
 
 // While a Promise object is "pending" (working), the result is undefined.
@@ -14,7 +15,6 @@
 
 // When a Promise object is "rejected", the result is an error object.
 
-// A Promise is an object representing the eventual completion or failure of an asynchronous operation.
 // The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
 // with new keyword you will get new instance. 
 // .then() is related to resolve, we get a call back in .then(), it automatically receives an argument.
@@ -48,6 +48,7 @@ const promiseThree = new Promise(function(resolve, reject) {
         resolve({username: "chai", email: "chai@example.com"})
     }, 1000)
 })
+
 promiseThree.then(function(user) {
     console.log(user); // => {username: "chai", email: "chai@example.com"}
 })
@@ -64,6 +65,7 @@ const promiseFour = new Promise(function(resolve, reject) {
         }
     }, 1000)
 })
+
 // how to avoid callback hell
 promiseFour.then((user) => {
     console.log(user);

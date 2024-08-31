@@ -1,5 +1,6 @@
 // forEach loop
-// The forEach() method of Array instances executes a provided function once for each array element.
+// The forEach() method calls a function for each element in an array.
+// The forEach() method is not executed for empty elements.
 
 const coding = ["js","ruby", "java", "python", "cpp"]
 

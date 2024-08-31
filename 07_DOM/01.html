@@ -13,15 +13,17 @@
     const changeText = function() {
         document.querySelector('h1').innerHTML = "best JS series"
     }
+
     // setTimeout(function(){
     //     console.log("Vishal")
     // }, 2000)
     const changeMe = setTimeout(changeText, 2000)
     document.querySelector('#stop').addEventListener('click', function() {
-        clearTimeout(changeMe)
+        clearTimeout(changeMe) 
         console.log("stopped")
     })
 </script>
 </html>
-
+// The setTimeout function in JavaScript is used to schedule a function to be executed after a specified number of milliseconds. 
 // clearTimeout is used to cancel a previously scheduled timeout operation created by the setTimeout function. 
+// If you do not provide the milliseconds (delay) parameter in the setTimeout function, the delay defaults to 0. This means the function you specify will be executed as soon as possible after the current script execution completes and the browser has a chance to process other events in the event queue.

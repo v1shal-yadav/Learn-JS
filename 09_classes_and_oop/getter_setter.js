@@ -11,7 +11,7 @@ class User {
     set password(value) {
         this._password = value
     }
-
+ 
     get email() {
         return this._email.toUpperCase()
     }

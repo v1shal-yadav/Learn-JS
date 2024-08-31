@@ -1,5 +1,4 @@
 // filter 
-
 // The filter() method creates a new array filled with elements that pass a test provided by a function.
 // The filter() method does not execute the function for empty elements.
 // The filter() method does not change the original array.
@@ -12,14 +11,14 @@ const newNums = myNums.filter ( (num) => {
 // OR 
 // const newNums = myNums.filter( (num) => num > 4)
 
-// const newNums = []
+const newNums1 = []
 myNums.forEach( (num) => {
     if(num > 4) {
-        newNums.push(num)
+        newNums1.push(num)
     }
 })
 
-console.log(newNums);
+console.log(newNums1);
 
 const books =  [
     { title: 'Book One', genre: 'Fiction', Publish: '1998', edition: '2009'},
